@@ -36,12 +36,12 @@ namespace CalculatorTest
 
         [Category("SubstractTests")]
         [Test]
-        public void OneCanSubstracNegativeIntegertFromZero() => Assert.That(Calc.Substract(0, -100), Is.EqualTo(99));
+        public void OneCanSubstracNegativeIntegertFromZero() => Assert.That(Calc.Substract(0, -100), Is.EqualTo(100));
 
         [Ignore("Ignoring")]
         [Category("SubstractTests")]
         [Test]
-        public void OneCanDevideByZero() => Assert.That(Calc.Devide(1, 0), Is.EqualTo(0));
+        public void OneCanDevideByZero() => Assert.That(Calc.Devide(1, 0), Is.EqualTo(Int32.MaxValue));
 
         [Category("Configuration")]
         [Test]
